@@ -1,11 +1,103 @@
 {
   "users": [
-
+    {
+      "id": 1,
+      "name": "Stan", 
+      "avatar": "/static/media/Stan.1523e137.png"
+    },
+    {
+      "id": 2,
+      "name": "John", 
+      "avatar": "/static/media/John.4d6c6f43.png"
+    },
+    {
+      "id": 3,
+      "name": "Jessica", 
+      "avatar": "/static/media/Jess.ef5b2d35.png"
+    }
+    
   ],
   "tables": [
+    {
+      "id": 1,
+      "bet": 8,
+      "pot": 13,
+      "playerCards": [
+        {"name": "spade_queen"},
+        {"name": "club_king"}
+      ],
+      "playerStatus": "ACTIVE"
+    },
+    {
+      "id": 2,
+      "bet": 3,
+      "pot": 3,
+      "playerCards": [
+        {"name": "diamond_6"},
+        {"name": "club_king"}
+      ],
+      "playerStatus": "AWAY"
+    },
+    {
+      "id": 3,
+      "bet": 18,
+      "pot": 32,
+      "playerCards": [
+        {"name": "club_king"},
+        {"name": "diamond_6"}
+      ],
+      "playerStatus": "ACTIVE"
+    }
 
   ],
   "players": [
+    {
+      "id": 10,
+      "userId": 1,
+      "tableId": 1,
+      "currentUser": true,
+      "place": 6,
+      "cards": [
+        {"name": "spade_queen"},
+        {"name": "club_king"}
+      ],
+      "balance": 3480,
+      "status": "ACTIVE",
+      "bet": 220
+    },
+    {
+      "id": 11,
+      "userId": 2,
+      "tableId": 1,
+      "place": 3,
+      "cards": [],
+      "balance": 1900,
+      "status": "ACTIVE",
+      "bet": 20
+    },
+    {
+      "id": 12,
+      "userId": 3,
+      "tableId": 1,
+      "place": 9,
+      "cards": [],
+      "balance": 420,
+      "status": "ACTIVE",
+      "bet": 80
+    },
+    {
+      "id": 13,
+      "userId": 1,
+      "tableId": 2,
+      "place": 1,
+      "cards": [
+        {"name": "diamond_5"},
+        {"name": "club_king"}
+      ],
+      "balance": 40.2,
+      "status": "AWAY",
+      "bet": 120
+    }
 
   ]
 }
