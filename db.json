@@ -23,20 +23,33 @@
       "bet": 8,
       "pot": 13,
       "playerCards": [
-        {"name": "spade_q"},
-        {"name": "club_j"}
+        {"name": "spade_j"},
+        {"name": "club_a"}
       ],
-      "playerStatus": "ACTIVE"
+      "playerStatus": "ACTIVE",
+      "flopCards": [
+        {"name": "diamond_6", "status": "Flop_1"},
+        {"name": "club_k", "status": "Flop_2"},
+        {"name": "spade_q", "status": "Flop_3"},
+        {"name": "spade_10", "status": "Flop_4"},
+        {"name": "club_j", "status": "Flop_5"}
+      ]
     },
     {
       "id": 2,
       "bet": 3,
-      "pot": 3,
+      "pot": 80,
       "playerCards": [
         {"name": "diamond_10"},
-        {"name": "diamond_a"}
+        {"name": "diamond_j"}
       ],
-      "playerStatus": "AWAY"
+      "playerStatus": "ACTIVE",
+      "flopCards": [
+        {"name": "club_q", "status": "Flop_1"},
+        {"name": "club_a", "status": "Flop_2"},
+        {"name": "spade_9", "status": "Flop_3"},
+        {"name": "heart_10", "status": "Flop_4"}
+      ]
     },
     {
       "id": 3,
@@ -46,9 +59,13 @@
         {"name": "heart_k"},
         {"name": "heart_a"}
       ],
-      "playerStatus": "ACTIVE"
+      "playerStatus": "ACTIVE",
+      "flopCards": [
+        {"name": "diamond_6", "status": "Flop_1"},
+        {"name": "diamond_7", "status": "Flop_2"},
+        {"name": "diamond_8", "status": "Flop_3"}
+      ]
     }
-
   ],
   "players": [
     {
@@ -56,7 +73,7 @@
       "userId": 1,
       "tableId": 1,
       "currentUser": true,
-      "place": 6,
+      "place": 3,
       "cards": [
         {"name": "spade_j"},
         {"name": "club_a"}
@@ -69,7 +86,7 @@
       "id": 11,
       "userId": 2,
       "tableId": 1,
-      "place": 3,
+      "place": 2,
       "cards": [],
       "balance": 1900,
       "status": "ACTIVE",
@@ -79,7 +96,7 @@
       "id": 12,
       "userId": 3,
       "tableId": 1,
-      "place": 9,
+      "place": 1,
       "cards": [],
       "balance": 420,
       "status": "ACTIVE",
@@ -89,15 +106,56 @@
       "id": 13,
       "userId": 1,
       "tableId": 2,
-      "place": 1,
+      "currentUser": true,
+      "currentTurnProgress": 20,
+      "place": 3,
       "cards": [
-        {"name": "diamond_5"},
-        {"name": "club_10"}
+        {"name": "diamond_10"},
+        {"name": "diamond_j"}
       ],
-      "balance": 40.2,
-      "status": "AWAY",
+      "balance": 400.2,
+      "status": "ACTIVE",
       "bet": 120
+    },
+    {
+      "id": 14,
+      "userId": 2,
+      "tableId": 2,
+      "place": 2,
+      "cards": [
+        {"name": "club_7"},
+        {"name": "club_6"}
+      ],
+      "balance": 38.2,
+      "status": "ACTIVE",
+      "bet": 120
+    },
+    {
+      "id": 15,
+      "userId": 3,
+      "tableId": 2,
+      "place": 1,
+      "cards": [],
+      "balance": 420,
+      "status": "AWAY",
+      "bet": 80
+    },
+    {
+      "id": 16,
+      "userId": 1,
+      "tableId": 3,
+      "currentUser": true,
+      "currentTurnProgress": 50,
+      "place": 3,
+      "cards": [
+        {"name": "heart_k"},
+        {"name": "heart_a"}
+      ],
+      "balance": 3480,
+      "status": "ACTIVE",
+      "bet": 100
     }
+    
 
   ]
 }
