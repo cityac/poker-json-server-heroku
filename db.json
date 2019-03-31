@@ -101,7 +101,8 @@
       "cards": [],
       "balance": 420,
       "status": "ACTIVE",
-      "bet": 80
+      "bet": 80,
+      "progress": 50
     },
     {
       "id": 13,
